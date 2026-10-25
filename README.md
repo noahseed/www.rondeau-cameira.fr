@@ -5,7 +5,8 @@ Rondeau-Cameira : https://sebastien.rondeau-cameira.fr/.
 
 ## Fichiers
 
-- `index.html` : contenu, métadonnées et styles de la page, sans dépendance externe.
+- `index.html` : contenu et métadonnées de la page.
+- `styles.css` : styles de la page, avec affichage mobile et mode sombre.
 - `sitemap.xml` : URL publique de la page d’accueil.
 - `robots.txt` : accès des robots et emplacement du sitemap.
 - `LICENSE` : licence du dépôt.
@@ -22,7 +23,7 @@ Ouvrir http://localhost:8000. Arrêter le serveur avec `Ctrl+C`.
 
 ## Publication et domaine
 
-Aucune compilation n’est nécessaire. Publier `index.html`, `sitemap.xml` et
+Aucune compilation n’est nécessaire. Publier `index.html`, `styles.css`, `sitemap.xml` et
 `robots.txt` à la racine du site auprès de l’hébergeur utilisé.
 
 L’URL publique retenue est `https://www.rondeau-cameira.fr/`, conformément au nom
