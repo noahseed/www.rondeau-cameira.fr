@@ -12,6 +12,8 @@ body {
   margin: 0;
   min-height: 100vh;
   display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 2rem;
   place-items: center;
   padding: 2rem 1.25rem;
 }
@@ -62,3 +64,7 @@ button { font: inherit; border: 0; cursor: pointer; }
   a:hover, button:hover { background: #2b6ec3; }
   a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline-color: #ffbe73; }
 }
+
+.site-footer { width: 100%; max-width: 42rem; text-align: center; font-size: 0.9rem; }
+.site-footer a { margin: 0; padding: 0.25rem; color: inherit; background: transparent; }
+.site-footer a:hover { text-decoration-thickness: 2px; }
