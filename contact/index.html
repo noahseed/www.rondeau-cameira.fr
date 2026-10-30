@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Sébastien Rondeau-Cameira</title>
+  <meta name="description" content="Contactez Sébastien Rondeau-Cameira pour une question, un projet ou une opportunité professionnelle.">
+  <link rel="canonical" href="https://www.rondeau-cameira.fr/contact/">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <main>
+    <nav aria-label="Navigation"><a href="../">Retour à l’accueil</a></nav>
+    <h1>Me contacter</h1>
+    <p>Une question, un projet ou une opportunité professionnelle ? Écrivez-moi avec ce formulaire.</p>
+    <p id="required-fields">Tous les champs sont obligatoires.</p>
+    <form class="contact-form" action="https://formspree.io/f/xnppzkpk" method="POST" aria-describedby="required-fields form-info">
+      <div>
+        <label for="name">Votre nom</label>
+        <input id="name" name="name" type="text" autocomplete="name" maxlength="120" required>
+      </div>
+      <div>
+        <label for="email">Votre adresse e-mail</label>
+        <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+      </div>
+      <div>
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" rows="7" maxlength="10000" required></textarea>
+      </div>
+      <p id="form-info">Votre nom, votre adresse e-mail et votre message seront transmis via Formspree pour me permettre de vous répondre. Après l’envoi, vous serez dirigé vers la page de confirmation de Formspree.</p>
+      <button type="submit">Envoyer le message</button>
+    </form>
+  </main>
+</body>
+</html>

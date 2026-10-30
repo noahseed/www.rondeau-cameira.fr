@@ -23,7 +23,7 @@ p { max-width: 36rem; }
 .music { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid currentColor; }
 .music h2 { font-size: 1.5rem; line-height: 1.3; }
 
-a {
+a, button {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.85rem 1.2rem;
@@ -34,13 +34,29 @@ a {
   text-underline-offset: 0.2em;
 }
 
-a:hover { background: #103b72; }
-a:focus-visible { outline: 3px solid #a34b00; outline-offset: 5px; }
+a:hover, button:hover { background: #103b72; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid #a34b00; outline-offset: 5px; }
+
+button { font: inherit; border: 0; cursor: pointer; }
+.contact-form { display: grid; gap: 1.25rem; margin-top: 2rem; }
+.contact-form label { display: block; margin-bottom: 0.4rem; font-weight: 600; }
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 0.35rem;
+}
+.contact-form textarea { resize: vertical; min-height: 10rem; }
+.contact-form button { justify-self: start; margin-top: 0; }
+#form-info { font-size: 0.9rem; margin: 0; }
 
 @media (prefers-color-scheme: dark) {
   :root { color: #edf3fb; background: #101c2c; }
   .domain { color: #b2c2d7; }
-  a { background: #245ea8; }
-  a:hover { background: #2b6ec3; }
-  a:focus-visible { outline-color: #ffbe73; }
+  a, button { background: #245ea8; }
+  a:hover, button:hover { background: #2b6ec3; }
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline-color: #ffbe73; }
 }

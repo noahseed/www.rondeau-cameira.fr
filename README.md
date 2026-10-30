@@ -6,6 +6,7 @@ Rondeau-Cameira : https://sebastien.rondeau-cameira.fr/.
 ## Fichiers
 
 - `index.html` : contenu et métadonnées de la page.
+- `contact/index.html` : formulaire de contact HTML envoyé à Formspree.
 - `styles.css` : styles de la page, avec affichage mobile et mode sombre.
 - `sitemap.xml` : URL publique de la page d’accueil.
 - `robots.txt` : accès des robots et emplacement du sitemap.
@@ -24,7 +25,14 @@ Ouvrir http://localhost:8000. Arrêter le serveur avec `Ctrl+C`.
 ## Publication et domaine
 
 Aucune compilation n’est nécessaire. Publier `index.html`, `styles.css`, `sitemap.xml` et
-`robots.txt` à la racine du site auprès de l’hébergeur utilisé.
+`robots.txt` à la racine du site auprès de l’hébergeur utilisé. Publier également
+le dossier `contact/` et les icônes référencées par les pages et le manifeste.
+
+Le formulaire utilise `POST https://formspree.io/f/xnppzkpk`, sans JavaScript ni
+serveur applicatif. Le navigateur vérifie les champs obligatoires et le format
+de l’adresse e-mail. Formspree gère la réponse après soumission. Pour vérifier
+la réception, effectuer un envoi manuel avec ses propres coordonnées et contrôler
+le tableau de bord Formspree ; aucun message de test n’est envoyé automatiquement.
 
 L’URL publique retenue est `https://www.rondeau-cameira.fr/`, conformément au nom
 de ce dépôt. Si le domaine principal change, mettre à jour le lien canonique dans
